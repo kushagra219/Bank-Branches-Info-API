@@ -11,7 +11,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         df = pd.read_csv('bank_branches.csv')
-        for i in range(df.shape[0]):
+        for i in range(9900):
             id = int(df.iloc[i, 1])
             name = df.iloc[i, 7]
             ifsc = df.iloc[i, 0]
