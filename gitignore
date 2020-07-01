@@ -1,4 +1,5 @@
 # Django #
+.vscode
 *.log
 *.pot
 *.pyc
@@ -8,6 +9,8 @@ __pycache__/
 */__pycache__/
 local_settings.py
 venv/
+db.sqlite3
+indian_banks.sql
 
 # Backup files # 
 *.bak 

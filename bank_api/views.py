@@ -19,9 +19,12 @@ class IFSCBranchDetailView(APIView):
 
     def post(self, request, *args, **kwargs):
         ifsc = request.POST.get('ifsc')
-        branch = branches.objects.get(ifsc=ifsc)
-        branch_serializer = branchSerializer(branch)
-        return Response(branch_serializer.data, status=HTTP_200_OK)
+        try:
+            branch = branches.objects.get(ifsc=ifsc)
+            branch_serializer = branchSerializer(branch)
+            return Response(branch_serializer.data, status=HTTP_200_OK)
+        except:
+            return Response({'status':'fail', 'detail':'branch may not exist'}, status=HTTP_200_OK)
 
 
 class BankCityBranchesListView(APIView):
@@ -30,11 +33,14 @@ class BankCityBranchesListView(APIView):
 
     def post(self, request, *args, **kwargs):
         bank_name = request.POST.get('bank')
-        bank_obj = banks.objects.get(id=int(bank_name))
         city = request.POST.get('city_name')
-        branchez = branches.objects.filter(bank=bank_obj, city=city)
-        branchez_dict = {}
-        for i in range(len(branchez)):
-            branch_serializer = branchSerializer(branchez[i])
-            branchez_dict[i+1] = branch_serializer.data
-        return Response(branchez_dict, status=HTTP_200_OK)
+        try:
+            bank_obj = banks.objects.get(id=int(bank_name))
+            branchez = branches.objects.filter(bank=bank_obj, city=city)
+            branchez_dict = {}
+            for i in range(len(branchez)):
+                branch_serializer = branchSerializer(branchez[i])
+                branchez_dict[i+1] = branch_serializer.data
+            return Response(branchez_dict, status=HTTP_200_OK)
+        except:
+            return Response({'status':'fail', 'detail':'branch may not exist'}, status=HTTP_200_OK)
