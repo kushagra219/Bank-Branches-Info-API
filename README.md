@@ -13,8 +13,8 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
 ## Rest Service APIs 
 
 ### A. Given a bank branch IFSC code, get branch details <a href="https://banks-api-info.herokuapp.com/bank/api/ifsc/">here</a>
-#### <strong>API Endpoint - https://banks-api-info.herokuapp.com/bank/api/ifsc/ - POST Request</strong>
-#### <strong>Request Paramters</strong>
+* <strong>API Endpoint - https://banks-api-info.herokuapp.com/bank/api/ifsc/ - POST Request</strong>
+* <strong>Request Paramters</strong>
   <table>
       <thead>
       <th>Fields</th>
@@ -27,7 +27,7 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
       <td>required</td>
       </tr>
    </table>
-#### <strong>Response</strong>
+* <strong>Response</strong>
    <table>
       <thead>
       <th>Fields</th>
@@ -62,12 +62,12 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
       <td>str</td>
       </tr>
    </table>
-####<strong>Sample Request Screenshot from browser</strong> 
+* <strong>Sample Request Screenshot from browser</strong> 
   <img src="ss/api1.png">
   
 ### B. Given a bank name and city, gets details of all branches of the bank in the city <a href="https://banks-api-info.herokuapp.com/bank/api/branches/">here</a>
-#### <strong>API Endpoint - https://banks-api-info.herokuapp.com/bank/api/branches/ - POST Request</strong>
-#### <strong>Request Paramters</strong>
+* <strong>API Endpoint - https://banks-api-info.herokuapp.com/bank/api/branches/ - POST Request</strong>
+* <strong>Request Paramters</strong>
   <table>
       <thead>
       <th>Fields</th>
@@ -85,7 +85,7 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
       <td>required</td>
       </tr>
    </table>
-#### <strong>Response</strong>
+* <strong>Response</strong>
    <table>
       <thead>
       <th>Fields</th>
@@ -133,7 +133,7 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
       <td>-</td>
       </tr>
    </table>
-#### <strong>Sample Request Screenshot from browser</strong> 
+* <strong>Sample Request Screenshot from browser</strong> 
   <img src="ss/api2.png">
 
 ## Sample Credentials 
