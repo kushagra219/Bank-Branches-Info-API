@@ -63,7 +63,7 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
       </tr>
    </table>
 * <strong>Sample Request Screenshot from browser</strong> 
-  <img src="images/api1.PNG">
+  <img src="ss/api1.png">
   
 ### B. Given a bank name and city, gets details of all branches of the bank in the city <a href="https://banks-api-info.herokuapp.com/bank/api/branches/">here</a>
 * <strong>API Endpoint - https://banks-api-info.herokuapp.com/bank/api/branches/ - POST Request</strong>
@@ -134,7 +134,7 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
       </tr>
    </table>
 * <strong>Sample Request Screenshot from browser</strong> 
-  <img src="images/api2.PNG">
+  <img src="ss/api2.png">
 
 ## Sample Credentials 
 * To https://banks-api-info.herokuapp.com/bank/api/admin/
