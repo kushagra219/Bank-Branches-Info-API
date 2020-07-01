@@ -137,7 +137,7 @@ on deployed version. So, please refer the first 10k entries of bank_branches.csv
   <img src="ss/api2.png">
 
 ## Sample Credentials 
-### To https://banks-api-info.herokuapp.com/bank/api/admin/
+### To https://banks-api-info.herokuapp.com/admin/
   <table>
     <thead>
     <th>USERNAME</th>
